@@ -204,6 +204,7 @@ const LoginPage = () => {
             <div className="w-full mt-4 flex justify-center">
               <div className="w-full max-w-[280px] sm:max-w-xs transition-transform duration-300 hover:scale-[1.01] flex justify-center">
                 <GoogleLogin
+                
                   onSuccess={handleGoogleSuccess}
                   onError={() => toast.error("Google Login Failed")}
                   theme="outline"

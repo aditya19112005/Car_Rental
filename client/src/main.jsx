@@ -9,7 +9,7 @@ import { GoogleOAuthProvider } from "@react-oauth/google";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
     <React.StrictMode>
-     <GoogleOAuthProvider clientId="198088144316-33pjbgfe4mr43pjd0ufparpvh24eh12f.apps.googleusercontent.com">
+     <GoogleOAuthProvider clientId="1039406391775-cmdagr89lltndgpnqoe0k7174j3vtm13.apps.googleusercontent.com">
       <HashRouter>
        <AppProvider>
         <MotionConfig viewport={{once:true}}>
