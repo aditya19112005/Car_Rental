@@ -25,9 +25,11 @@ const LoginPage = () => {
       const { data } = await axios.post(`/user/${state}`, checkState);
 
       if (data.success) {
-        navigate("/");
-        setToken(data.token);
         localStorage.setItem('token', data.token);
+        
+        setToken(data.token);
+        navigate("/");
+        
       } else {
         toast.error(data.message);
       }
@@ -246,4 +248,3 @@ const LoginPage = () => {
 };
 
 export default LoginPage;
-
